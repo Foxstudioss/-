@@ -90,23 +90,22 @@ header h1 {
 /* Product Gallery Section */
 #products {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Arrange items in a vertical column */
+    align-items: center;    /* Center items horizontally */
+    gap: 20px;             /* Add spacing between product cards */
     margin-top: 80px;
     padding: 50px 20px;
 }
 
 .product-card {
+    width: 90%;            /* Make cards take most of the screen width */
+    max-width: 400px;      /* Set a max width for better appearance */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow: hidden;
-    width: 300px;
     transition: transform 0.3s ease-in-out;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
 }
 
 .product-card img {
